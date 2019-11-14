@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>codejam-palette</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header>
+               <div class="nav">
+                    <div class="nav__list"><img src="src/assets/nav-icon.svg" alt="nav"></div>
+                    <h1 class="nav__title">CodeJam - Pallete</h1>
+               </div>
+               <div class="menu"><img src="src/assets/menu-icon.svg" alt="menu"></div>
+            </header>
+            <main>
+                <div class="pallete">
+                    <ul class="table table-choose-list">
+                        <li class="table__item paint-bucket">
+                            <img src="src/assets/paint-bucket.svg" alt="paint-bucket">
+                            <p>Paint bucket</p>
+                        </li>
+                        <li class="table__item choose-color">
+                            <img src="src/assets/choose-color.svg" alt="choose-color">
+                            <p>Choose color</p>
+                        </li>
+                        <li class="table__item pensil highlight">
+                            <img src="src/assets/pensil.svg" alt="pensil">
+                            <p>Pensil</p>
+                        </li>
+                        <li class="table__item table__item_no-use">
+                            <img src="src/assets/transform.svg" alt="transform">
+                            <p>Transform</p>
+                        </li>
+                        <li class="table__item clear-canvas">
+                            <img src="src/assets/clear.png" class="clear-icon" alt="clear">
+                            <p>Clear canvas</p>
+                        </li>
+                    </ul>
+                    <ul class="table color-choose-list">
+                        <li class="table__item">
+                            <div class="table__item_rnd table__item_rnd_curr"></div>
+                            <p>Current color</p>
+                        </li>
+                        <li class="table__item table__item_line js-list-prev">
+                            <div class="table__item_rnd table__item_rnd_prev"></div>
+                            <p>Prev color</p>
+                        </li>
+                        <li class="table__item js-list-red">
+                            <div class="table__item_rnd table__item_rnd_red"></div>
+                            <p>Red</p>
+                        </li>
+                        <li class="table__item js-list-blue">
+                            <div class="table__item_rnd table__item_rnd_blue"></div>
+                            <p>Blue</p>
+                        </li>
+                        <li class="table__item js-list-input">
+                            <input id="color" type="color" class="table__item_rnd input-color">
+                            <label for="color" class="label-color"></label>
+                            <p>Your color</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="canvas">
+                    <canvas id="canvas"></canvas>
+                    <div class="coordinats">X / Y</div>
+                </div>
+            </main> 
+            <footer>
+                <p>created by Vladimir Drachuk<br>RSSchool, 2019</p>
+            </footer>
+        </div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
